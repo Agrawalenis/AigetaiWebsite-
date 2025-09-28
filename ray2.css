@@ -481,8 +481,8 @@ a:focus, button:focus, .video-item:focus {
   outline: 2px solid rgba(255, 255, 255, 0.5);
   outline-offset: 2px;
 }
-/* Dream Machine Section */
-.dream-machine-section {
+/* Aigetai Studio Section */
+.aigetai-studio-section {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
@@ -515,7 +515,7 @@ a:hover {
 }
 
 /* Button */
-.dream-machine-btn {
+.aigetai-studio-btn {
   display: inline-block;
   padding: 12px 24px;
   font-size: 1.125rem;
@@ -527,7 +527,7 @@ a:hover {
   text-align: center;
 }
 
-.dream-machine-btn:hover {
+.aigetai-studio-btn:hover {
   background-color: rgba(255, 255, 255, 0.9);
 }
 
@@ -558,7 +558,7 @@ a:hover {
 }
 
 @media (min-width: 1024px) {
-  .dream-machine-section {
+  .aigetai-studio-section {
     gap: 2.5rem;
     padding: 2rem 1rem;
   }
@@ -568,7 +568,7 @@ a:hover {
   .text-body {
     font-size: 1.25rem;
   }
-  .dream-machine-btn {
+  .aigetai-studio-btn {
     font-size: 1.25rem;
     padding: 14px 28px;
   }

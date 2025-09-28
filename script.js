@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Property data containing images and descriptions - Updated to match Luma's AI themes
+    // Property data containing images and descriptions - Updated to match Aigetai's AI themes
     const propertyData = {
         1: {
             text: "Cinematic Visuals for Film",

@@ -1481,7 +1481,7 @@ small {
   position: relative;
   width: 100%;
   aspect-ratio: 16 / 5;
-  background-color: #e0e0e0; /* grey bg like Luma Photon */
+  background-color: #e0e0e0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2156,14 +2156,14 @@ small {
   }
 }
 /* Section Wrapper */
-.luma-section {
+.aigetai-section {
   background-color: #000;
   color: #fff;
   padding: 60px 20px;
 }
 
 /* Container */
-.luma-container {
+.aigetai-container {
   width: 100%;
   margin: 0 auto;
   padding: 0 20px;
@@ -2171,7 +2171,7 @@ small {
 }
 
 /* Heading */
-.luma-title {
+.aigetai-title {
   font-size: 3rem;
   font-weight: bold;
   margin: 0 0 2rem 0;
@@ -2180,7 +2180,7 @@ small {
 }
 
 /* Paragraphs wrapper (grid) */
-.luma-container > .luma-subtext {
+.aigetai-container > .aigetai-subtext {
   font-size: 1.25rem;
   line-height: 1.6;
   color: #ccc;
@@ -2189,7 +2189,7 @@ small {
 }
 
 /* Dono p ek grid me side-by-side */
-.luma-subtext {
+.aigetai-subtext {
   display: inline-block;
   width: 100%;
   max-width: 100%;
@@ -2197,8 +2197,8 @@ small {
 }
 
 /* Grid layout for paragraphs */
-.luma-container > .luma-subtext:nth-of-type(1),
-.luma-container > .luma-subtext:nth-of-type(2) {
+.aigetai-container > .aigetai-subtext:nth-of-type(1),
+.aigetai-container > .aigetai-subtext:nth-of-type(2) {
   display: inline-block;
   width: 48%;
   vertical-align: top;
@@ -2206,7 +2206,7 @@ small {
 }
 
 /* Images container */
-.luma-images {
+.aigetai-images {
   display: flex;
   justify-content: center;
   gap: 30px;
@@ -2215,7 +2215,7 @@ small {
 }
 
 /* Image block */
-.luma-block {
+.aigetai-block {
   background-color: #111;
   padding: 20px;
   border-radius: 16px;
@@ -2225,7 +2225,7 @@ small {
   align-items: center;
 }
 
-.luma-block img {
+.aigetai-block img {
   max-width: 750px;
   width: 100%;
   height: auto;
@@ -2234,25 +2234,25 @@ small {
   transition: transform 0.3s ease;
 }
 
-.luma-block img:hover {
+.aigetai-block img:hover {
   transform: scale(1.05);
 }
 
 /* Responsive Styles */
 @media (max-width: 1024px) {
-  .luma-title {
+  .aigetai-title {
     text-align: center;
     font-size: 2.2rem;
   }
 
-  .luma-container > .luma-subtext:nth-of-type(1),
-  .luma-container > .luma-subtext:nth-of-type(2) {
+  .aigetai-container > .aigetai-subtext:nth-of-type(1),
+  .aigetai-container > .aigetai-subtext:nth-of-type(2) {
     display: block;
     width: 100%;
     text-align: center;
   }
 
-  .luma-images {
+  .aigetai-images {
     flex-direction: column;
     align-items: center;
   }
@@ -2377,7 +2377,7 @@ display: flex;
 
 
 
-.luma-footer {
+.aigetai-footer {
   background: #111; /* dark background */
   color: #fff;
   padding: 60px 10%;

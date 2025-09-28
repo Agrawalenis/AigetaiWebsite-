@@ -1,4 +1,4 @@
-// Luma Ray2 Website JavaScript
+// Aigetai Ray2 Website JavaScript
 
 document.addEventListener('DOMContentLoaded', function() {
     
@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initHeaderBehavior();
     initVideoControls();
     
-    console.log('Luma Ray2 website initialized');
+    console.log('Aigetai Ray2 website initialized');
 });
 
 /**
@@ -362,15 +362,15 @@ function initAccessibility() {
 document.addEventListener('DOMContentLoaded', initAccessibility);
 
 // Export functions for potential external use
-window.LumaRay2 = {
+window.AigetaiRay2 = {
     initVideoObserver,
     initPromptCopy,
     showCopyFeedback,
     throttle,
     debounce
 };
-document.querySelector('.dream-machine-btn').addEventListener('click', function(e) {
-  console.log('Dream Machine button clicked!');
+document.querySelector('.aigetai-studio-btn').addEventListener('click', function(e) {
+  console.log('Aigetai Studio button clicked!');
 });
 document.addEventListener("DOMContentLoaded", () => {
   const icons = document.querySelectorAll(".footer-socials a svg");
