@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream MACHINE - Login</title>
+    <link rel="stylesheet" href="login-style.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-content">
+            <h1 class="logo">
+                <span class="dream">Dream</span>
+                <span class="machine">MACHINE</span>
+            </h1>
+            
+            <div class="login-buttons">
+                <button class="login-btn google-btn" onclick="handleLogin()">
+                    <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+                        // ...existing SVG paths for Google...
+                    </svg>
+                    Sign in with Google
+                </button>
+                
+                <button class="login-btn apple-btn" onclick="handleLogin()">
+                    <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+                        // ...existing SVG paths for Apple...
+                    </svg>
+                    Sign in with Apple
+                </button>
+                
+                <button class="login-btn enterprise-btn" onclick="handleLogin()">
+                    <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+                        // ...existing SVG path for Enterprise...
+                    </svg>
+                    Enterprise Sign In
+                </button>
+            </div>
+        </div>
+        
+        <div class="background-images">
+            <div class="bg-image landscape"></div>
+            <div class="bg-image dog"></div>
+            <div class="bg-image portrait"></div>
+        </div>
+    </div>
+
+    <script>
+        function handleLogin() {
+            // In a real application, this would handle actual authentication
+            // For now, we'll simulate a successful login and redirect to the main page
+            alert('Login successful!');
+            window.location.href = 'index.html';
+        }
+    </script>
+</body>
+</html>
