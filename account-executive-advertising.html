@@ -84,11 +84,6 @@
             margin-bottom: 20px;
             color: #333;
         }
-        .tabs {
-            display: flex;
-            border-bottom: 1px solid #eee;
-            margin-bottom: 20px;
-        }
         .tab-button {
             padding: 10px 20px;
             cursor: pointer;
@@ -328,16 +323,8 @@
             <div class="job-title-main">Account Executive – Advertising</div>
 
             <div>
-                <span class="label">Location</span>
-                <span class="value">Palo Alto, CA</span>
-            </div>
-            <div>
                 <span class="label">Employment Type</span>
                 <span class="value">Full time</span>
-            </div>
-            <div>
-                <span class="label">Location Type</span>
-                <span class="value">Hybrid</span>
             </div>
             <div>
                 <span class="label">Department</span>
@@ -347,14 +334,17 @@
                 <span class="label">Compensation</span>
                 <span class="value">$150K - $250K + Commission</span>
             </div>
+            <div>
+                <span class="label">Eligibility</span>
+                <span class="value">3+ years advertising sales experience</span>
+            </div>
+            <div>
+                <span class="label">Vacancies</span>
+                <span class="value">2</span>
+            </div>
         </div>
 
         <div class="job-content">
-            <div class="tabs">
-                <button class="tab-button active" onclick="openTab(event, 'overview')">Overview</button>
-                <button class="tab-button" onclick="openTab(event, 'application')">Application</button>
-            </div>
-
             <div id="overview" class="tab-content active">
                 <p>We are seeking a dynamic and results-driven Account Executive to join our growing sales team and focus on advertising partnerships. You will be responsible for driving revenue growth by selling our AI-powered creative solutions to advertising agencies, brands, and media companies. You will develop and execute strategic sales plans to expand our presence in the advertising industry.</p>
                 <p>You thrive in a fast-paced startup environment and have a proven track record of exceeding sales targets in the advertising or technology space. You understand the unique challenges and opportunities in the advertising industry and can effectively communicate the value of AI-powered creative tools to potential clients.</p>
@@ -442,10 +432,6 @@
                     <input type="text" id="currentCompany" placeholder="Type here...">
                 </div>
                 <div class="form-group">
-                    <label for="currentLocation">Current location</label>
-                    <input type="text" id="currentLocation" placeholder="Type here...">
-                </div>
-                <div class="form-group">
                     <label for="phone">Phone</label>
                     <input type="tel" id="phone" placeholder="1-234-567-8910...">
                 </div>
@@ -476,13 +462,6 @@
                 <div class="form-group">
                     <label for="portfolio">Portfolio</label>
                     <input type="text" id="portfolio" placeholder="Type here...">
-                </div>
-                <div class="form-group">
-                    <label>Background</label>
-                    <p style="margin-bottom: 10px;">Are you able to relocate to the Bay Area?<span class="required-star">*</span></p>
-                    <label class="radio-label"><input type="radio" name="relocate" value="yes-live-here"> I already live here</label><br>
-                    <label class="radio-label"><input type="radio" name="relocate" value="yes-relocate"> I can relocate for the right role</label><br>
-                    <label class="radio-label"><input type="radio" name="relocate" value="no-relocate"> I cannot relocate</label>
                 </div>
 
                 <div class="apply-button-section">
@@ -584,21 +563,6 @@
                 errorList.appendChild(li);
             }
 
-            // Check Relocation radio buttons
-            const relocateRadios = document.querySelectorAll('input[name="relocate"]');
-            let relocateSelected = false;
-            for (const radio of relocateRadios) {
-                if (radio.checked) {
-                    relocateSelected = true;
-                    break;
-                }
-            }
-            if (!relocateSelected) {
-                errorsFound = true;
-                const li = document.createElement('li');
-                li.textContent = 'Missing entry for required field: Are you able to relocate to the Bay Area?';
-                errorList.appendChild(li);
-            }
 
             if (errorsFound) {
                 validationErrorsDiv.style.display = 'block';

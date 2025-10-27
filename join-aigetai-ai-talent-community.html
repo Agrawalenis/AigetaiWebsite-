@@ -17,12 +17,10 @@
         .label { font-weight: 500; color: #666; }
         .value { font-weight: 600; color: #333; }
         .job-content { background: white; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); overflow: hidden; }
-        .tabs { display: flex; border-bottom: 1px solid #e1e5e9; }
-        .tab-button { flex: 1; padding: 1rem; border: none; background: none; cursor: pointer; font-size: 1rem; font-weight: 500; color: #666; transition: all 0.3s ease; }
-        .tab-button.active { color: #333; border-bottom: 2px solid #007bff; }
-        .tab-button:hover { background-color: #f8f9fa; }
-        .tab-content { display: none; padding: 2rem; }
+        .tab-content { display: block; padding: 2rem; }
         .tab-content.active { display: block; }
+        #application { display: none; }
+        #application.show { display: block; }
         .tab-content h3 { margin: 1.5rem 0 1rem 0; color: #333; }
         .tab-content ul { margin-left: 1.5rem; margin-bottom: 1rem; }
         .tab-content li { margin-bottom: 0.5rem; }
@@ -56,17 +54,13 @@
     <div class="job-page-container">
         <div class="job-details-sidebar">
             <div class="job-title-main">Join Aigetai AI Talent Community</div>
-            <div><span class="label">Location</span><span class="value">Palo Alto, CA</span></div>
             <div><span class="label">Employment Type</span><span class="value">Full time</span></div>
-            <div><span class="label">Location Type</span><span class="value">Hybrid</span></div>
             <div><span class="label">Department</span><span class="value">Talent Community</span></div>
             <div><span class="label">Compensation</span><span class="value">Competitive</span></div>
+            <div><span class="label">Eligibility</span><span class="value">Open to all backgrounds</span></div>
+            <div><span class="label">Vacancies</span><span class="value">Unlimited</span></div>
         </div>
         <div class="job-content">
-            <div class="tabs">
-                <button class="tab-button active" onclick="openTab(event, 'overview')">Overview</button>
-                <button class="tab-button" onclick="openTab(event, 'application')">Application</button>
-            </div>
             <div id="overview" class="tab-content active">
                 <p>Join our Talent Community and stay connected with AIGETAI for future opportunities! We're always looking for talented individuals who are passionate about AI and want to be part of our mission to build multimodal AI that expands human imagination and capabilities.</p>
                 <h3>Why Join Our Talent Community?</h3>
@@ -102,7 +96,7 @@
                 </ul>
                 <p class="note">Note: Joining our talent community is free and you can opt out at any time. We respect your privacy and will only contact you with relevant opportunities.</p>
                 <div class="apply-button-section">
-                    <a href="#application" class="apply-button" onclick="openTab(event, 'application')">Join Our Talent Community</a>
+                    <button class="apply-button" onclick="showApplicationForm()">Join Our Talent Community</button>
                 </div>
             </div>
             <div id="application" class="tab-content">
@@ -156,17 +150,6 @@
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="location">Preferred Location</label>
-                        <select id="location" name="location">
-                            <option value="">Select preferred location</option>
-                            <option value="palo-alto">Palo Alto, CA</option>
-                            <option value="san-francisco">San Francisco, CA</option>
-                            <option value="new-york">New York, NY</option>
-                            <option value="remote">Remote</option>
-                            <option value="other">Other</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
                         <label for="additionalInfo">Tell us about your interest in AI and what excites you about joining AIGETAI<span class="required-star">*</span></label>
                         <textarea id="additionalInfo" name="additionalInfo" placeholder="Share your passion for AI, your career goals, and what you hope to contribute to our mission..." required></textarea>
                     </div>
@@ -199,14 +182,9 @@
         <p>&copy; 2024 AIGETAI. All rights reserved.</p>
     </div>
     <script>
-        function openTab(evt, tabName) {
-            var i, tabcontent, tablinks;
-            tabcontent = document.getElementsByClassName("tab-content");
-            for (i = 0; i < tabcontent.length; i++) { tabcontent[i].style.display = "none"; }
-            tablinks = document.getElementsByClassName("tab-button");
-            for (i = 0; i < tablinks.length; i++) { tablinks[i].className = tablinks[i].className.replace(" active", ""); }
-            document.getElementById(tabName).style.display = "block";
-            evt.currentTarget.className += " active";
+        function showApplicationForm() {
+            document.getElementById('application').classList.add('show');
+            document.getElementById('application').scrollIntoView({ behavior: 'smooth' });
         }
         document.getElementById('resumeFile').addEventListener('change', function(e) {
             const file = e.target.files[0];
