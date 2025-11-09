@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us - AIGETAI</title>
+
+  <!-- Font & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <style>
+    /* ===== Base Layout ===== */
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+      overflow: hidden; /* No scroll */
+      font-family: 'Inter', sans-serif;
+      background: radial-gradient(circle at top center, rgba(0, 60, 255, 0.25) 0%, #000814 80%);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Circular Glow Background */
+    body::before {
+      content: "";
+      position: absolute;
+      top: -200px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 900px;
+      height: 900px;
+      background: radial-gradient(circle, rgba(0,102,255,0.4) 0%, rgba(0,0,0,0) 70%);
+      filter: blur(100px);
+      opacity: 0.8;
+      z-index: 0;
+    }
+
+    /* ===== Contact Card ===== */
+    .contact-section {
+      z-index: 1;
+      width: 90%;
+      max-width: 1050px;
+      height: 85vh;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 16px;
+      box-shadow: 0 0 40px rgba(0, 0, 0, 0.4);
+      display: flex;
+      flex-direction: row;
+      overflow: hidden;
+      backdrop-filter: blur(20px);
+    }
+
+    /* ===== Two Columns ===== */
+    .contact-info, .contact-form {
+      flex: 1;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    /* ===== Left Info ===== */
+    .contact-info h2 {
+      font-size: 2rem;
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+
+    .contact-info p {
+      color: #b0b3c1;
+      margin-bottom: 30px;
+      line-height: 1.6;
+    }
+
+    .info-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 15px;
+      margin-bottom: 20px;
+    }
+
+    .info-item i {
+      font-size: 1.4rem;
+      color: #00c6ff;
+      margin-top: 4px;
+    }
+
+    .info-item h3 {
+      margin: 0;
+      font-size: 1rem;
+      font-weight: 600;
+    }
+
+    .info-item p a {
+      color: #b0b3c1;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .info-item p a:hover {
+      color: #00c6ff;
+    }
+
+    /* ===== Right Form ===== */
+    .contact-form h2 {
+      font-size: 1.8rem;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px 14px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 8px;
+      color: #fff;
+      font-size: 1rem;
+      outline: none;
+      transition: border 0.3s;
+    }
+
+    input:focus, textarea:focus {
+      border-color: #00c6ff;
+    }
+
+    textarea {
+      resize: none;
+      height: 120px;
+    }
+
+    button {
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      background: linear-gradient(90deg, #007bff, #00c6ff);
+      color: #fff;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      opacity: 0.9;
+    }
+
+    /* ===== Responsive Layout ===== */
+    @media (max-width: 900px) {
+      .contact-section {
+        flex-direction: column;
+        height: 95vh;
+      }
+
+      .contact-info, .contact-form {
+        padding: 30px 25px;
+        justify-content: flex-start;
+      }
+
+      .contact-info h2, .contact-form h2 {
+        font-size: 1.6rem;
+        text-align: center;
+      }
+
+      .contact-info p {
+        text-align: center;
+      }
+
+      .info-item {
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+      }
+
+      form {
+        align-items: center;
+      }
+
+      input, textarea, button {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <section class="contact-section">
+    
+    <!-- Left Info -->
+    <div class="contact-info">
+      <h2>Contact Us</h2>
+      <p>Have questions or want to collaborate with AIGETAI? Get in touch — we’d love to hear from you.</p>
+
+      <div class="info-item">
+        <i class="fas fa-map-marker-alt"></i>
+        <div>
+          <h3>Address</h3>
+          <p>Technology, Information and Internet,<br>Patna, Bihar</p>
+        </div>
+      </div>
+
+      <div class="info-item">
+        <i class="fas fa-phone-alt"></i>
+        <div>
+          <h3>Phone</h3>
+          <p><a href="https://wa.me/917899053007" target="_blank">+91 78990 53007 (WhatsApp)</a></p>
+        </div>
+      </div>
+
+      <div class="info-item">
+        <i class="fas fa-envelope"></i>
+        <div>
+          <h3>Email</h3>
+          <p><a href="mailto:info@aigetai.com">info@aigetai.com</a></p>
+        </div>
+      </div>
+
+      <div class="info-item">
+        <i class="fab fa-linkedin"></i>
+        <div>
+          <h3>LinkedIn</h3>
+          <p><a href="https://www.linkedin.com/company/ihola/" target="_blank">linkedin.com/company/ihola</a></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Form -->
+    <div class="contact-form">
+      <h2>Send Message</h2>
+      <form onsubmit="event.preventDefault(); alert('Your message has been sent successfully!');">
+        <input type="text" placeholder="Full Name" required />
+        <input type="email" placeholder="Email" required />
+        <textarea placeholder="Type your message..." required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+
+  </section>
+</body>
+</html>
