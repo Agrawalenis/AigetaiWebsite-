@@ -5,18 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact Us - AIGETAI</title>
 
-  <!-- Font & Icons -->
+\
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
   <style>
-    /* ===== Base Layout ===== */
+ 
     html, body {
       margin: 0;
       padding: 0;
       height: 100%;
       width: 100%;
-      overflow: hidden; /* No scroll */
+      overflow: hidden; 
       font-family: 'Inter', sans-serif;
       background: radial-gradient(circle at top center, rgba(0, 60, 255, 0.25) 0%, #000814 80%);
       color: #fff;
@@ -25,7 +25,7 @@
       justify-content: center;
     }
 
-    /* Circular Glow Background */
+
     body::before {
       content: "";
       position: absolute;
@@ -40,7 +40,6 @@
       z-index: 0;
     }
 
-    /* ===== Contact Card ===== */
     .contact-section {
       z-index: 1;
       width: 90%;
@@ -56,7 +55,6 @@
       backdrop-filter: blur(20px);
     }
 
-    /* ===== Two Columns ===== */
     .contact-info, .contact-form {
       flex: 1;
       padding: 40px;
@@ -65,7 +63,6 @@
       justify-content: center;
     }
 
-    /* ===== Left Info ===== */
     .contact-info h2 {
       font-size: 2rem;
       font-weight: 600;
@@ -107,7 +104,6 @@
       color: #00c6ff;
     }
 
-    /* ===== Right Form ===== */
     .contact-form h2 {
       font-size: 1.8rem;
       font-weight: 600;
@@ -156,7 +152,6 @@
       opacity: 0.9;
     }
 
-    /* ===== Responsive Layout ===== */
     @media (max-width: 900px) {
       .contact-section {
         flex-direction: column;
@@ -197,7 +192,7 @@
 <body>
   <section class="contact-section">
     
-    <!-- Left Info -->
+
     <div class="contact-info">
       <h2>Contact Us</h2>
       <p>Have questions or want to collaborate with AIGETAI? Get in touch — we’d love to hear from you.</p>
@@ -235,7 +230,7 @@
       </div>
     </div>
 
-    <!-- Right Form -->
+
     <div class="contact-form">
       <h2>Send Message</h2>
       <form onsubmit="event.preventDefault(); alert('Your message has been sent successfully!');">
@@ -249,3 +244,4 @@
   </section>
 </body>
 </html>
+
