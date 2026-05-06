@@ -1,0 +1,88 @@
+.enquiry-page{
+padding:100px 20px;
+font-family:Arial, Helvetica, sans-serif;
+ background-image: url("../assets/software-enquiry.gif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* HERO */
+
+.enquiry-hero{
+text-align:center;
+margin-bottom:60px;
+}
+
+.enquiry-hero h1{
+font-size:40px;
+margin-bottom:15px;
+}
+
+.enquiry-hero p{
+max-width:600px;
+margin:auto;
+color:#3a3939;
+font-weight: 500px;
+}
+
+/* FORM */
+
+.enquiry-form-section{
+display:flex;
+justify-content:center;
+}
+
+.enquiry-form{
+width:700px;
+background:rgba(255,255,255,0.7);
+padding:40px;
+border-radius:12px;
+box-shadow:0 10px 30px rgba(0,0,0,0.1);
+}
+
+.form-row{
+display:flex;
+gap:20px;
+margin-bottom:20px;
+}
+
+.form-row input,
+.form-row select{
+flex:1;
+padding:12px;
+border:1px solid #ddd;
+border-radius:6px;
+font-size:14px;
+}
+
+textarea{
+width:100%;
+padding:12px;
+border:1px solid #ddd;
+border-radius:6px;
+margin-bottom:20px;
+font-size:14px;
+}
+
+button{
+background:black;
+color:white;
+padding:14px;
+border:none;
+border-radius:6px;
+cursor:pointer;
+width:100%;
+font-size:16px;
+
+display:block;        /* makes margin work */
+width:fit-content;    /* keeps button compact */
+margin:20px auto 0;   /* centers horizontally */
+transition: all 0.3s ease;    
+}
+
+button:hover{
+    background: #333;
+    transform: translate(-2px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}

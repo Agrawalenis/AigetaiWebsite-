@@ -1,0 +1,15 @@
+body{
+  margin:0;
+}
+
+/* switch page anmination */
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-transition-wrapper {
+  flex: 1;
+  will-change: opacity, transform;
+}
