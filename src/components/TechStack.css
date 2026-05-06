@@ -1,0 +1,198 @@
+/* ── SECTION ── */
+.techstack-section {
+  padding: 7rem 2rem;
+  background: #000000;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Subtle radial glow behind the grid */
+.techstack-section::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 900px;
+  height: 600px;
+  background: radial-gradient(ellipse at center, rgba(99, 102, 241, 0.06) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.techstack-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  
+}
+
+/* ── HEADER ── */
+.techstack-header {
+  text-align: center;
+  margin-bottom: 4.5rem;
+}
+
+.techstack-eyebrow {
+  display: inline-block;
+  font-size: 0.90rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  color: #9f9fa0;
+  margin-bottom: 1.25rem;
+}
+
+.techstack-header h2 {
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: -0.025em;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.techstack-header p {
+  font-size: 1rem;
+  color: #6b7280;
+  font-weight: 500;
+  max-width: 500px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* ── GRID ── */
+.techstack-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+/* ── CARD ── */
+.techstack-card {
+  background: #0d0d0d;
+  border: 1px solid #4f5351;
+  border-radius: 20px;
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+  cursor: default;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.techstack-card:hover {
+  border-color: #5e5e5e;
+  box-shadow: 0 24px 64px rgba(77, 80, 90, 0.875);
+}
+
+/* Sliding color accent on top edge */
+.tc-accent-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--accent);
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 0 0 2px 2px;
+}
+
+.techstack-card:hover .tc-accent-line {
+  transform: scaleX(1);
+}
+
+/* ── CARD HEADER ── */
+.tc-header {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin-bottom: 0.6rem;
+}
+
+.tc-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  box-shadow: 0 0 8px var(--accent);
+}
+
+.tc-header h3 {
+  font-size: 0.98rem;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: -0.01em;
+}
+
+.tc-desc {
+  font-size: 0.8rem;
+  color: #b6b9bd;
+  line-height: 1.65;
+  font-weight: 500;
+  margin-bottom: 1.75rem;
+}
+
+/* ── TOOL CHIPS ── */
+.tc-tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+
+.tc-tool {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  background: #2e2e2e;
+  border: 1px solid #464545;
+  border-radius: 12px;
+  padding: 0.8rem 1rem;
+  min-width: 70px;
+  cursor: default;
+  transition: background 0.22s ease, border-color 0.22s ease, box-shadow 0.22s ease;
+}
+
+.tc-tool:hover {
+  background: #3a3a3a;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.tc-tool img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  display: block;
+}
+
+.tc-tool span {
+  font-size: 0.65rem;
+  color: #4b5563;
+  font-weight: 600;
+  text-align: center;
+  white-space: nowrap;
+  letter-spacing: 0.01em;
+  line-height: 1;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 900px) {
+  .techstack-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  .techstack-section {
+    padding: 5rem 1.25rem;
+  }
+
+  .techstack-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tc-tools {
+    gap: 0.5rem;
+  }
+}

@@ -1,7 +1,3 @@
-
----
-
-```markdown
 # 🚀 AIGETAI — Scalable Frontend Experience System
 
 AIGETAI is a modern, component-driven frontend platform engineered to deliver high-quality digital service experiences. It showcases capabilities across web development, mobile applications, AI systems, and custom software solutions.
@@ -25,7 +21,6 @@ The project is designed with a strong emphasis on **scalable architecture, reusa
 ## 🏗️ Project Architecture
 
 ```
-
 src/
 │
 ├── assets/                # Static assets (images, media)
@@ -36,7 +31,7 @@ src/
 │   ├── Footer.tsx
 │   ├── FAQSection.tsx
 │   ├── FeatureCard.tsx
-│   ├── PizzaCarousel.tsx
+│   ├── Service.tsx
 │   ├── Showcase.tsx
 │   ├── WhatWeDo.tsx
 │   └── Decolmages.tsx
@@ -61,8 +56,7 @@ src/
 │
 ├── App.tsx                # Root component
 └── index.tsx              # Entry point
-
-````
+```
 
 ---
 
@@ -92,7 +86,7 @@ src/
 
 ---
 
-### 🔹 PizzaCarousel (Service Carousel)
+### 🔹 Service Carousel
 - Dynamic content rendering
 - Auto-play with manual control
 - Modular and reusable structure
@@ -123,7 +117,7 @@ src/
 ```bash
 git clone https://github.com/your-username/agatai.git
 cd agatai
-````
+```
 
 ### 2. Install Dependencies
 
@@ -214,26 +208,3 @@ Frontend Developer focused on building **high-performance, scalable, and visuall
 AIGETAI is not just a UI project — it is a **scalable frontend system blueprint** designed for real-world applications.
 
 If this project adds value or inspires your work, consider giving it a ⭐.
-
-```
-
----
-
-## 💡 Why this version is stronger
-
-- Aligns exactly with your **real folder structure**
-- Highlights **engineering maturity (not just UI)**
-- Positions project as **system-level work (important for recruiters)**
-- Includes **asset strategy (based on your recent bug)**
-- More **credible + professional tone**
-
----
-
-If you want to push even further:
-- Add **live demo + screenshots section (very high impact)**
-- Add **architecture diagram (huge recruiter signal)**
-- Convert into **GitHub portfolio showcase README**
-
-Just say:
-👉 “make it portfolio-level README”
-```

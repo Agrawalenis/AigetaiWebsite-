@@ -1,10 +1,9 @@
-import webDevImg from "../assets/pizza-hawaiian.png";
-import mobileDevImg from "../assets/pizza-pepperoni.png";
-import aiImg from "../assets/pizza-spinach.png";
-import customSoftwareImg from "../assets/pizza-paneer.png";
-import cloudImg from "../assets/pizza-margherita.png";
-import securityImg from "../assets/pizza-veggie.png";
-// import pizzaBbq from "../assets/pizza-bbq.png";
+import webDevImg from "../assets/feature/webdev.png";
+import mobileDevImg from "../assets/feature/mobile.jpeg";
+import aiImg from "../assets/feature/AI.jpeg";
+import customSoftwareImg from "../assets/feature/custom.jpeg";
+import cloudImg from "../assets/feature/automate.png";
+import securityImg from "../assets/feature/suppport.jpeg";
 
 export interface Service {
   id: string;

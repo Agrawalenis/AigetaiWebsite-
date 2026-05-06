@@ -158,10 +158,10 @@ export default function Career() {
       <section className="career-details">
         <div className="career-title-row">
           <div>
-            <h1>We are building a new kind of mind</h1>
+            <h1>We are building the future of digital solutions</h1>
             <p>
-              We believe real-world physics is the path to general intelligence.
-              We unite research, product, and go-to-market into one engine.
+              We believe in creating impactful software that solves real-world problems.
+              We unite innovation, engineering, and design to deliver excellence across every project.
             </p>
           </div>
           <button className="career-btn">Join Our Team</button>

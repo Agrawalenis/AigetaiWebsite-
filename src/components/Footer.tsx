@@ -101,24 +101,24 @@ const Footer: React.FC = () => {
           {/* Navigation Links */}
           <div className="footer-links">
             <div className="footer-column">
-              <a href="#product">Product</a>
-              <a href="#pricing">Pricing</a>
-              <a href="#use-cases">Use Cases</a>
-              <a href="#api">API</a>
+              <a href="/explore">Product</a>
+              <a href="/pricing">Pricing</a>
+              <a href="/explore">Use Cases</a>
+              <a href="/enquiry">API</a>
             </div>
 
             <div className="footer-column">
-              <a href="#enterprise">Enterprise</a>
-              <a href="#join-us">Join Us</a>
-              <a href="#creative-partner">Creative Partner Program</a>
-              <a href="#education">Education Program</a>
+              <a href="/explore">Enterprise</a>
+              <a href="/career">Join Us</a>
+              <a href="/explore">Creative Partner Program</a>
+              <a href="/classes">Education Program</a>
             </div>
 
             <div className="footer-column">
-              <a href="#learning-hub">Learning Hub</a>
-              <a href="#media-kit">Media kit</a>
-              <a href="#terms">Terms of Service</a>
-              <a href="#privacy">Privacy Policy</a>
+              <a href="/classes">Learning Hub</a>
+              <a href="/blog">Media kit</a>
+              <a href="/explore">Terms of Service</a>
+              <a href="/explore">Privacy Policy</a>
             </div>
           </div>
         </div>

@@ -86,11 +86,12 @@ export default function Explore() {
             Explore our work
           </motion.p>
           <motion.h1 variants={cardReveal}>
-            Thoughtful digital experiences with a calm, elevated feel.
+            Engineered digital experiences with a focus on performance and scale.
           </motion.h1>
           <motion.p className="explore-copy" variants={cardReveal}>
-            Inspired by charity landing pages with generous spacing, soft color
-            layers, rounded surfaces, and a clear story that leads people to act.
+            Specializing in end-to-end digital transformation. We build scalable
+            web platforms, robust mobile applications, and intelligent AI systems
+            that drive real business value.
           </motion.p>
 
           <motion.div className="explore-actions" variants={cardReveal}>
