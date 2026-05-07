@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.2c44d4fb.css",
+    "main.js": "/static/js/main.86fb1b75.js",
+    "static/media/demo5.mp4": "/static/media/demo5.9a41340a27730a6e1871.mp4",
+    "static/media/demo6.mp4": "/static/media/demo6.42f38c5ecf7a2cd15102.mp4",
+    "static/media/software-enquiry.gif": "/static/media/software-enquiry.176aae1dd38de95cc840.gif",
+    "static/media/demo3.mp4": "/static/media/demo3.253448c37554818136ad.mp4",
+    "static/media/demo1.mp4": "/static/media/demo1.d310ce234717e3247a08.mp4",
+    "static/media/demo2.mp4": "/static/media/demo2.edecd35360ab6b743e18.mp4",
+    "static/media/videoplayback.mp4": "/static/media/videoplayback.aa4a75208d0a7c0ccc54.mp4",
+    "static/media/demo4.mp4": "/static/media/demo4.3df15c031d5876629526.mp4",
+    "static/media/Artificial intelligence (AI).jpg": "/static/media/Artificial intelligence (AI).d36b8d235753d69c9653.jpg",
+    "static/media/online-hero.jpg": "/static/media/online-hero.49cb4c9bb6ae6cc27908.jpg",
+    "static/media/AI.jpeg": "/static/media/AI.eb38442fd7668ac4ab93.jpeg",
+    "static/media/UI-UX-Design.jpg": "/static/media/UI-UX-Design.16a9f81401dec79e5178.jpg",
+    "static/media/career-apply.jpg": "/static/media/career-apply.78af933028a9ad064dd8.jpg",
+    "static/media/React-JSi.jpg": "/static/media/React-JSi.c6c592159452e4ddf414.jpg",
+    "index.html": "/index.html",
+    "static/media/company-logo.svg": "/static/media/company-logo.43ed82eb8c70e221bb0140f3e45bfcfe.svg",
+    "main.2c44d4fb.css.map": "/static/css/main.2c44d4fb.css.map",
+    "main.86fb1b75.js.map": "/static/js/main.86fb1b75.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2c44d4fb.css",
+    "static/js/main.86fb1b75.js"
+  ]
+}
