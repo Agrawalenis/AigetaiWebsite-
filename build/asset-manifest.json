@@ -1,15 +1,20 @@
 {
   "files": {
     "main.css": "/static/css/main.2c44d4fb.css",
-    "main.js": "/static/js/main.86fb1b75.js",
-    "static/media/demo5.mp4": "/static/media/demo5.9a41340a27730a6e1871.mp4",
+    "main.js": "/static/js/main.3905c6ac.js",
     "static/media/demo6.mp4": "/static/media/demo6.42f38c5ecf7a2cd15102.mp4",
     "static/media/software-enquiry.gif": "/static/media/software-enquiry.176aae1dd38de95cc840.gif",
-    "static/media/demo3.mp4": "/static/media/demo3.253448c37554818136ad.mp4",
+    "static/media/demo3.mp4": "/static/media/demo3.ad14e6fe780d23580472.mp4",
+    "static/media/devops.mp4": "/static/media/devops.bcb805e3322ef2fa3e8c.mp4",
     "static/media/demo1.mp4": "/static/media/demo1.d310ce234717e3247a08.mp4",
-    "static/media/demo2.mp4": "/static/media/demo2.edecd35360ab6b743e18.mp4",
+    "static/media/cyber-security.mp4": "/static/media/cyber-security.e1fc8334e321ded1288a.mp4",
+    "static/media/ai.mp4": "/static/media/ai.054bd6bae6b2d26dca18.mp4",
+    "static/media/demo5.mp4": "/static/media/demo5.17a55a6b3be520c08523.mp4",
     "static/media/videoplayback.mp4": "/static/media/videoplayback.aa4a75208d0a7c0ccc54.mp4",
-    "static/media/demo4.mp4": "/static/media/demo4.3df15c031d5876629526.mp4",
+    "static/media/demo2.mp4": "/static/media/demo2.3ddbf341726025838403.mp4",
+    "static/media/demo4.mp4": "/static/media/demo4.751ba38f0587e0d5214e.mp4",
+    "static/media/webdev.mp4": "/static/media/webdev.106438108bf8bea1f364.mp4",
+    "static/media/mobileApps.mp4": "/static/media/mobileApps.58d7f1167357fc07b13a.mp4",
     "static/media/Artificial intelligence (AI).jpg": "/static/media/Artificial intelligence (AI).d36b8d235753d69c9653.jpg",
     "static/media/online-hero.jpg": "/static/media/online-hero.49cb4c9bb6ae6cc27908.jpg",
     "static/media/AI.jpeg": "/static/media/AI.eb38442fd7668ac4ab93.jpeg",
@@ -19,10 +24,10 @@
     "index.html": "/index.html",
     "static/media/company-logo.svg": "/static/media/company-logo.43ed82eb8c70e221bb0140f3e45bfcfe.svg",
     "main.2c44d4fb.css.map": "/static/css/main.2c44d4fb.css.map",
-    "main.86fb1b75.js.map": "/static/js/main.86fb1b75.js.map"
+    "main.3905c6ac.js.map": "/static/js/main.3905c6ac.js.map"
   },
   "entrypoints": [
     "static/css/main.2c44d4fb.css",
-    "static/js/main.86fb1b75.js"
+    "static/js/main.3905c6ac.js"
   ]
 }

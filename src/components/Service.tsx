@@ -2,11 +2,11 @@ import { motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import "./service.css";
 
-import demo1 from "../assets/demo1.mp4";
-import demo2 from "../assets/demo2.mp4";
-import demo3 from "../assets/demo3.mp4";
-import demo4 from "../assets/demo4.mp4";
-import demo5 from "../assets/demo5.mp4";
+import webdev from "../assets/webdev.mp4";
+import devops from "../assets/devops.mp4";
+import ai from "../assets/ai.mp4";
+import cybersecurity from "../assets/cyber-security.mp4";
+import mobileApps from "../assets/mobileApps.mp4";
 
 type Slide = {
   id: number;
@@ -20,31 +20,31 @@ const slides: Slide[] = [
     id: 0,
     label: "Web Development",
     sub: "Scalable, fast, and beautiful web apps built to convert.",
-    video: demo1,
+    video: webdev,
   },
   {
     id: 1,
     label: "AI Solutions",
     sub: "Intelligent systems that automate decisions and surface insights.",
-    video: demo2,
+    video: ai,
   },
   {
     id: 2,
     label: "Cloud & DevOps",
     sub: "Zero-downtime infrastructure that scales with your growth.",
-    video: demo3,
+    video: devops,
   },
   {
     id: 3,
     label: "Mobile Apps",
     sub: "Native and cross-platform apps users actually love using.",
-    video: demo4,
+    video: mobileApps,
   },
   {
     id: 4,
     label: "Cybersecurity",
     sub: "End-to-end security audits, hardening, and monitoring.",
-    video: demo5,
+    video: cybersecurity,
   },
 ];
 
