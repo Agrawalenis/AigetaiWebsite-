@@ -84,8 +84,8 @@ export default function Service() {
   }, []);
 
   return (
-    <div style={{height:1000}}>
-      <div className="service-header ">
+    <div className="service-section">
+      <div className="service-header">
         <span className="service-eyebrow">OUR SERVICES</span>
         <h2 className="service-heading">
           Everything you need to ship great products
@@ -123,7 +123,8 @@ export default function Service() {
         >
           {slides.map((slide, index) => {
             const offset = getCircularOffset(index, activeIndex);
-            const slideWidth = 700;
+            const isMobile = typeof window !== "undefined" && window.innerWidth < 768;
+            const slideWidth = isMobile ? Math.min(window.innerWidth * 0.88, 700) : 700;
 
             const isCenter = offset === 0;
             const isLeft = offset === -1;
@@ -132,17 +133,17 @@ export default function Service() {
             const x = isCenter
               ? -slideWidth / 2
               : isLeft
-              ? -700 - slideWidth / 2
+              ? -slideWidth * 1.5
               : isRight
-              ? 700 - slideWidth / 2
+              ? slideWidth * 0.5
               : offset < 0
-              ? -1100
-              : 1100;
+              ? -slideWidth * 2.5
+              : slideWidth * 1.5;
 
-            const y = isCenter ? 0 : 100;
-            const scale = isCenter ? 1.1 : isLeft || isRight ? 0.7 : 0.6;
+            const y = isCenter ? 0 : isMobile ? 0 : 100;
+            const scale = isCenter ? 1 : isLeft || isRight ? 0.7 : 0.6;
             const rotate = isCenter ? 0 : offset < 0 ? -12 : 12;
-            const opacity = isCenter ? 1 : isLeft || isRight ? 0.55 : 0;
+            const opacity = isCenter ? 1 : isMobile ? 0 : isLeft || isRight ? 0.55 : 0;
             const blur = isCenter ? "blur(0px)" : "blur(5px)";
             const zIndex = isCenter ? 3 : 2;
 

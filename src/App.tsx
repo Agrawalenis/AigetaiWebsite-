@@ -10,6 +10,7 @@ import SoftwareEnquiry from "./pages/SoftwareEnquiry";
 import OnlineClasses from "./pages/OnlineClasses";
 import Footer from "./components/Footer";
 import Explore from "./pages/Explore/index";
+import MobileCTA from "./components/MobileCTA";
 
 // page switch anmination jss code
 const defaultTransition = {
@@ -89,6 +90,7 @@ function App() {
       </AnimatePresence>
 
         <Footer/>
+        <MobileCTA />
     </div>
     
   

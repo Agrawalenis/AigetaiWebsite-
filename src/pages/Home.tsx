@@ -108,7 +108,7 @@ export default function Home() {
       <TechMarquee />
 
       {/*  CIRCULAR GALLERY (tech images) ── */}
-      <div style={{ height: "600px", position: "relative" }}>
+      <div className="circular-gallery-wrapper" style={{ height: "600px", position: "relative" }}>
         <CircularGallery
           items={galleryItems}
           bend={1}
